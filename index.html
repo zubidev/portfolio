@@ -3,261 +3,512 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Resume of Muhammad Zubair Khan" />
-    <title>Muhammad Zubair Khan | Resume</title>
+    <title>Muhammad Zubair Khan — Staff Software Engineer</title>
+    <meta
+      name="description"
+      content="Staff Software Engineer with 13+ years building self-service growth surfaces, subscription platforms, and APIs — Laravel, Node.js, React/TypeScript, AWS."
+    />
+    <link rel="canonical" href="https://zubidev.com/" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet" />
-    <link href="css/styles.css" rel="stylesheet" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Muhammad Zubair Khan — Staff Software Engineer" />
+    <meta
+      property="og:description"
+      content="13+ years building self-service growth surfaces, subscription platforms, and APIs."
+    />
+    <meta property="og:url" content="https://zubidev.com/" />
+    <meta property="og:image" content="https://zubidev.com/assets/img/profile-480.jpg" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body class="resume-body">
-    <div class="bg-orb orb-one"></div>
-    <div class="bg-orb orb-two"></div>
 
-    <nav class="top-nav">
-      <a class="logo" href="#page-top">zubidev</a>
-      <div class="nav-links">
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Icon sprite, inline so the page needs zero external requests -->
+    <svg class="sprite" aria-hidden="true" focusable="false">
+      <defs>
+        <symbol id="i-github" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.55v-2.1c-3.2.7-3.88-1.4-3.88-1.4-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.77 1.2 1.77 1.2 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.25-1.28-5.25-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.69 5.4-5.26 5.69.41.36.78 1.06.78 2.14v3.17c0 .3.2.66.8.55A11.5 11.5 0 0 0 12 .5Z"
+          />
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM2.5 9.75h4.96V21H2.5V9.75Zm7.02 0h4.75v1.54h.07c.66-1.16 2.06-1.9 3.72-1.9 3.2 0 4.44 2.02 4.44 5.35V21h-4.96v-5.4c0-1.36-.5-2.3-1.75-2.3-1.06 0-1.7.7-1.97 1.38-.1.24-.13.58-.13.92V21H9.52s.07-9.9 0-11.25Z"
+          />
+        </symbol>
+        <symbol id="i-x" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M18.24 2.25h3.31l-7.23 8.26 8.5 11.24h-6.65l-5.22-6.82-5.96 6.82H1.47l7.5-8.57L.82 2.25h6.82l4.88 6.45 5.72-6.45Zm-1.17 17.52h1.83L6.03 4.13H4.07l13 15.64Z"
+          />
+        </symbol>
+        <symbol id="i-stackoverflow" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M17.24 15.15v5.06H4.87v-5.06H2.85V22.2h16.4v-7.05h-2.01ZM6.9 14.4l9.66 2.02.42-1.98-9.66-2.03-.42 1.99Zm1.28-4.72 8.95 4.17.85-1.82-8.95-4.18-.85 1.83Zm2.5-4.5 7.59 6.32 1.3-1.55-7.59-6.32-1.3 1.55ZM15.6 0l-1.63 1.21 5.88 7.92 1.63-1.21L15.6 0ZM6.7 18.19h9.86v-2H6.7v2Z"
+          />
+        </symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 6.5h18v11a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 17.5v-11Zm0 .5 9 6.5 9-6.5"
+          />
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 3.5v11m0 0 4-4m-4 4-4-4M4.5 19h15"
+          />
+        </symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24">
+          <path
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"
+          />
+          <circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8" />
+        </symbol>
+      </defs>
+    </svg>
+
+    <header class="site-head">
+      <a class="brand" href="#top"><span>zubi</span>dev</a>
+      <nav aria-label="Sections">
+        <a href="#work">Work</a>
         <a href="#experience">Experience</a>
-        <a href="#skills">Skills</a>
+        <a href="#stack">Stack</a>
         <a href="#education">Education</a>
-      </div>
-      <a class="nav-cta" href="assets/resume/zubidev.pdf" target="_blank">Download</a>
-    </nav>
-
-    <header class="hero" id="page-top">
-      <div class="container hero-grid">
-        <div class="hero-card reveal" style="--delay: 0.05s;">
-          <div class="hero-profile">
-            <img src="assets/img/profile.jpg" alt="Muhammad Zubair Khan portrait" />
-          </div>
-          <div class="hero-copy">
-            <p class="eyebrow">Backend Developer | PHP | Laravel | JavaScript</p>
-            <h1>Muhammad Zubair Khan</h1>
-            <p class="subtitle">Senior software engineer with 10+ years of experience building scalable web applications and APIs from scratch. Proven track record delivering reliable, high-performing products, improving development workflows, and collaborating across teams.</p>
-            <div class="contact-row">
-              <span><i class="fa-solid fa-phone"></i> (092) 314-29084448</span>
-              <a href="mailto:zubidev@gmail.com"><i class="fa-solid fa-envelope"></i> zubidev@gmail.com</a>
-              <span><i class="fa-solid fa-location-dot"></i> Karachi, PK</span>
-            </div>
-            <div class="cta-row">
-              <a class="btn-primary" href="mailto:zubidev@gmail.com">Lets Talk</a>
-              <a class="btn-ghost" href="assets/resume/zubidev.pdf" target="_blank">Download Resume</a>
-            </div>
-            <div class="social-row">
-              <a class="social-icon" href="https://www.linkedin.com/in/zubidev/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a class="social-icon" href="https://github.com/zubidev" target="_blank"><i class="fab fa-github"></i></a>
-              <a class="social-icon" href="https://twitter.com/zubidev" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a class="social-icon" href="https://stackoverflow.com/users/5068558/zubidev" target="_blank"><i class="fab fa-stack-overflow"></i></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-stats">
-          <div class="stat-card reveal" style="--delay: 0.15s;">
-            <span class="stat-value">10+ Years</span>
-            <span class="stat-label">Product and platform delivery</span>
-          </div>
-          <div class="stat-card reveal" style="--delay: 0.25s;">
-            <span class="stat-value">20+ Integrations</span>
-            <span class="stat-label">Slack, Jira, Salesforce, and more</span>
-          </div>
-          <div class="stat-card reveal" style="--delay: 0.35s;">
-            <span class="stat-value">Remote-Ready</span>
-            <span class="stat-label">Distributed teams, agile workflows</span>
-          </div>
-        </div>
-      </div>
+      </nav>
+      <a class="btn btn-sm" href="assets/resume/zubidev.pdf" target="_blank" rel="noopener">
+        <svg class="ico" aria-hidden="true"><use href="#i-download" /></svg>
+        Résumé
+      </a>
     </header>
 
-    <main class="container">
+    <main id="main">
+      <!-- Hero -->
+      <section class="hero" id="top">
+        <div class="hero-text">
+          <p class="eyebrow">Staff Software Engineer · Gaditek</p>
+          <h1>Muhammad Zubair Khan</h1>
+          <p class="lede">
+            I build the parts of a subscription product that decide whether people sign up, stay, and
+            upgrade — signup and trial flows, referral and partner platforms, billing pipelines, and
+            the APIs underneath them. 13+ years, mostly as the engineer accountable end to end, from
+            data model to UI.
+          </p>
+
+          <ul class="meta-row">
+            <li>
+              <svg class="ico" aria-hidden="true"><use href="#i-pin" /></svg>
+              Karachi, Pakistan · distributed team
+            </li>
+            <li>
+              <a href="mailto:zubidev@gmail.com">
+                <svg class="ico" aria-hidden="true"><use href="#i-mail" /></svg>
+                zubidev@gmail.com
+              </a>
+            </li>
+          </ul>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:zubidev@gmail.com">Get in touch</a>
+            <a class="btn" href="assets/resume/zubidev.pdf" target="_blank" rel="noopener">
+              <svg class="ico" aria-hidden="true"><use href="#i-download" /></svg>
+              Download résumé
+            </a>
+          </div>
+
+          <ul class="social" aria-label="Profiles">
+            <li>
+              <a href="https://github.com/zubidev" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg class="ico" aria-hidden="true"><use href="#i-github" /></svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/zubidev/"
+                target="_blank"
+                rel="noopener"
+                aria-label="LinkedIn"
+              >
+                <svg class="ico" aria-hidden="true"><use href="#i-linkedin" /></svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://stackoverflow.com/users/5068558/zubidev"
+                target="_blank"
+                rel="noopener"
+                aria-label="Stack Overflow"
+              >
+                <svg class="ico" aria-hidden="true"><use href="#i-stackoverflow" /></svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/zubidev" target="_blank" rel="noopener" aria-label="X">
+                <svg class="ico" aria-hidden="true"><use href="#i-x" /></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="hero-portrait">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="assets/img/profile-480.webp 480w, assets/img/profile-960.webp 960w"
+              sizes="(max-width: 720px) 150px, 320px"
+            />
+            <img
+              src="assets/img/profile-480.jpg"
+              srcset="assets/img/profile-480.jpg 480w, assets/img/profile-960.jpg 960w"
+              sizes="(max-width: 720px) 150px, 320px"
+              width="480"
+              height="503"
+              alt="Portrait of Muhammad Zubair Khan"
+              fetchpriority="high"
+            />
+          </picture>
+        </div>
+      </section>
+
+      <!-- Selected work -->
+      <section class="section" id="work">
+        <div class="section-head">
+          <h2>Selected work</h2>
+          <p>Systems I owned end to end, and what they actually did.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Partner &amp; referral platform</h3>
+            <p>
+              Built from scratch on Laravel + React: self-serve partner signup, referral link
+              attribution, commission tiers, payout workflows, fraud checks, and a partner-facing
+              dashboard. Thousands of partners are onboarded and using it in production today.
+            </p>
+            <ul class="tags">
+              <li>Laravel</li>
+              <li>React</li>
+              <li>MySQL</li>
+              <li>Attribution</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Subscription metrics pipeline</h3>
+            <p>
+              A WHMCS → ChartMogul pipeline that normalises raw billing and subscription events into
+              MRR, churn, expansion, and LTV — the numbers leadership actually uses to judge
+              self-serve growth.
+            </p>
+            <ul class="tags">
+              <li>WHMCS</li>
+              <li>ChartMogul</li>
+              <li>Data modelling</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Self-service growth surfaces</h3>
+            <p>
+              Signup, trial, and upgrade paths across a portfolio of subscription products — the
+              React/TypeScript interfaces and Node.js APIs behind them, instrumented and A/B tested
+              with PostHog so shipped changes are judged on real numbers.
+            </p>
+            <ul class="tags">
+              <li>TypeScript</li>
+              <li>Node.js</li>
+              <li>PostHog</li>
+              <li>Experimentation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>APIs that evolve without breaking</h3>
+            <p>
+              REST APIs consumed by web front-ends, internal tools, and third parties — versioned and
+              extended through additive schema changes, dual-write/backfill migrations, and
+              deprecation windows instead of breaking releases.
+            </p>
+            <ul class="tags">
+              <li>REST</li>
+              <li>Versioning</li>
+              <li>Migrations</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Experience -->
       <section class="section" id="experience">
         <div class="section-head">
           <h2>Experience</h2>
-          <p>Backend-heavy product engineering with integrations, scalable APIs, and team collaboration.</p>
+          <p>13+ years, the last decade at Gaditek.</p>
         </div>
-        <div class="timeline">
-          <article class="timeline-item reveal" style="--delay: 0.1s;">
-            <div class="timeline-meta">
+
+        <ol class="timeline">
+          <li class="job">
+            <div class="job-head">
+              <h3>Staff Software Engineer</h3>
+              <p class="org">Gaditek</p>
+              <p class="when">Jan 2023 – Present</p>
+            </div>
+            <ul class="bullets">
+              <li>
+                Own self-service growth surfaces end to end across a portfolio of subscription
+                products — signup and trial flows, upgrade and conversion paths, and the
+                React/TypeScript interfaces and Node.js APIs behind them.
+              </li>
+              <li>
+                Built a complete partner onboarding and referral platform from scratch (Laravel +
+                React), now serving thousands of onboarded partners in production.
+              </li>
+              <li>
+                Designed and shipped REST APIs that evolved without breaking existing clients, using
+                additive schema changes, dual-write/backfill migrations, and deprecation windows.
+              </li>
+              <li>
+                Built a WHMCS → ChartMogul subscription data pipeline producing trustworthy MRR,
+                churn, expansion, and LTV metrics.
+              </li>
+              <li>
+                Ran onboarding and conversion experiments with PostHog — defining hypotheses and
+                success metrics with PMs and marketing, then shipping the winners.
+              </li>
+            </ul>
+          </li>
+
+          <li class="job">
+            <div class="job-head">
               <h3>Senior Software Engineer</h3>
-              <p>Gaditek</p>
-              <span class="time">Dec 2015 - Present | Remote, PK</span>
+              <p class="org">Gaditek</p>
+              <p class="when">Jan 2019 – Dec 2022</p>
             </div>
-            <ul class="bullet">
-              <li>Built a Slack bot enabling metric creation, updates, deletes, and search from the core app using slash commands, events, scheduled messages, and interactive components.</li>
-              <li>Delivered third-party integrations with Jira, Salesforce, Asana, Zendesk, Tableau, Baremetrics, Google Docs, and Google Calendar.</li>
-              <li>Designed and implemented AWS network architecture for multiple workloads (web app, analytics pipeline, database) and environments.</li>
-              <li>Established coding standards and review practices to improve consistency, readability, maintainability, and testability.</li>
-              <li>Developed Angular front-end features and Laravel APIs; contributed to architecture discussions and peer code reviews.</li>
-              <li>Designed a new REST API that unified legacy MVC components with custom client requirements.</li>
+            <ul class="bullets">
+              <li>
+                Delivered high-traffic front-ends with React and Gatsby against headless CMS APIs,
+                improving Core Web Vitals on acquisition and onboarding entry points.
+              </li>
+              <li>
+                Built reusable component and block systems — custom Gutenberg blocks and a theme
+                framework on the WordPress Customization API — so product and content teams could
+                ship landing pages without engineering.
+              </li>
+              <li>
+                Worked to enterprise platform standards on WordPress VIP: VIP-Go ruleset, PHPCS,
+                mandatory code review, strict performance and caching requirements.
+              </li>
+              <li>
+                Cut p95 response times with Redis caching and MySQL query optimisation; instrumented
+                services with New Relic and Sentry to catch regressions before users reported them.
+              </li>
+              <li>
+                Automated build and release workflows with Jenkins CI/CD and AWS (Lambda, S3, SQS),
+                and shipped internal tooling that reduced release friction for the whole web team.
+              </li>
             </ul>
-          </article>
+          </li>
 
-          <article class="timeline-item reveal" style="--delay: 0.2s;">
-            <div class="timeline-meta">
+          <li class="job">
+            <div class="job-head">
               <h3>Software Engineer</h3>
-              <p>TECTUTIVE</p>
-              <span class="time">Sep 2013 - Dec 2015 | Karachi, PK</span>
+              <p class="org">Gaditek</p>
+              <p class="when">Dec 2015 – Dec 2018</p>
             </div>
-            <ul class="bullet">
-              <li>Rebuilt the company brand website from scratch with a modular architecture.</li>
-              <li>Integrated third-party booking systems and partner APIs.</li>
-              <li>Built a module-based page builder to improve content flexibility.</li>
-              <li>Integrated Salesforce and Dynamics CRM with WordPress through third-party APIs.</li>
-              <li>Installed Google Analytics and refined reporting for faster troubleshooting.</li>
-              <li>Built a tool to import Associated Press news and images into WordPress via the AP News Media API.</li>
+            <ul class="bullets">
+              <li>
+                Built integrations across Slack, Jira, Salesforce, Asana, Zendesk, Tableau,
+                Baremetrics, and Google Workspace — including a Slack bot using slash commands,
+                events, scheduled messages, and interactive components.
+              </li>
+              <li>
+                Designed AWS network architecture supporting multiple workloads and environments —
+                web app, analytics pipeline, and database.
+              </li>
+              <li>
+                Established coding standards and review practices for consistency, maintainability,
+                and testability.
+              </li>
             </ul>
-          </article>
+          </li>
 
-          <article class="timeline-item reveal" style="--delay: 0.3s;">
-            <div class="timeline-meta">
-              <h3>Software Developer</h3>
-              <p>INVORTEX</p>
-              <span class="time">Apr 2012 - Sep 2013 | Karachi, PK</span>
+          <li class="job compact">
+            <div class="job-head">
+              <h3>Earlier roles</h3>
+              <p class="org">TECTUTIVE · INVORTEX · Creative Jin</p>
+              <p class="when">Dec 2011 – Dec 2015</p>
             </div>
-            <ul class="bullet">
-              <li>Documented, built, and consumed RESTful APIs.</li>
-              <li>Applied SEO best practices across web projects.</li>
-              <li>Delivered new features using PHP, HTML/CSS, JavaScript, and MySQL.</li>
-              <li>Maintained and modernized web apps through refactoring, performance tuning, bug fixes, and migrations.</li>
-              <li>Optimized code for performance and maintainability.</li>
-              <li>Collaborated in cross-functional agile teams.</li>
+            <ul class="bullets">
+              <li>
+                Rebuilt a company brand site from scratch with a module-based page builder;
+                integrated booking systems, Salesforce, and Dynamics CRM with WordPress.
+              </li>
+              <li>
+                Built a tool importing Associated Press news and images into WordPress via the AP
+                News Media API.
+              </li>
+              <li>
+                Documented, built, and consumed RESTful APIs; refactored and performance-tuned
+                PHP/MySQL applications in cross-functional agile teams.
+              </li>
             </ul>
-          </article>
-
-          <article class="timeline-item reveal" style="--delay: 0.4s;">
-            <div class="timeline-meta">
-              <h3>Web Developer</h3>
-              <p>CREATIVE JIN</p>
-              <span class="time">Dec 2011 - Apr 2012 | Karachi, PK</span>
-            </div>
-            <ul class="bullet">
-              <li>Collaborated with team leads and project managers to deliver on-time milestones.</li>
-              <li>Applied core web concepts, including HTTP request handling.</li>
-              <li>Used Git for version control in collaborative environments.</li>
-              <li>Integrated MySQL databases with PHP applications.</li>
-              <li>Diagnosed and resolved PHP development issues across multiple applications.</li>
-            </ul>
-          </article>
-        </div>
+          </li>
+        </ol>
       </section>
 
-      <section class="section" id="skills">
+      <!-- Stack -->
+      <section class="section" id="stack">
         <div class="section-head">
-          <h2>Skills</h2>
-          <p>Core stack and tools used across the product lifecycle.</p>
+          <h2>Stack</h2>
+          <p>What I reach for day to day.</p>
         </div>
-        <div class="skill-grid">
-          <div class="skill-card reveal" style="--delay: 0.1s;">
-            <h3>Backend & APIs</h3>
-            <div class="tag-row">
-              <span class="tag">PHP</span>
-              <span class="tag">Laravel</span>
-              <span class="tag">Symfony</span>
-              <span class="tag">CodeIgniter</span>
-              <span class="tag">CakePHP</span>
-              <span class="tag">RESTful</span>
-              <span class="tag">SOAP</span>
-            </div>
+
+        <div class="stack-grid">
+          <div class="stack-group">
+            <h3>Backend</h3>
+            <ul class="tags">
+              <li>PHP</li>
+              <li>Laravel</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>NestJS</li>
+              <li>Python</li>
+              <li>Go</li>
+              <li>REST APIs</li>
+            </ul>
           </div>
-          <div class="skill-card reveal" style="--delay: 0.2s;">
+          <div class="stack-group">
             <h3>Frontend</h3>
-            <div class="tag-row">
-              <span class="tag">JavaScript</span>
-              <span class="tag">jQuery</span>
-              <span class="tag">Angular</span>
-              <span class="tag">Vue</span>
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">Bootstrap</span>
-            </div>
+            <ul class="tags">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Next.js</li>
+              <li>Gatsby</li>
+              <li>JavaScript</li>
+              <li>HTML &amp; CSS</li>
+            </ul>
           </div>
-          <div class="skill-card reveal" style="--delay: 0.3s;">
-            <h3>Data & Storage</h3>
-            <div class="tag-row">
-              <span class="tag">MySQL</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">MS SQL</span>
-              <span class="tag">Oracle</span>
-              <span class="tag">MS Access</span>
-            </div>
+          <div class="stack-group wide">
+            <h3>AWS &amp; infrastructure</h3>
+            <ul class="tags">
+              <li>EC2</li>
+              <li>RDS</li>
+              <li>S3</li>
+              <li>Lambda</li>
+              <li>SQS</li>
+              <li>CloudFront</li>
+              <li>Route 53</li>
+              <li>VPC</li>
+              <li>IAM</li>
+              <li>CloudWatch</li>
+              <li>ElastiCache</li>
+              <li>Auto Scaling</li>
+              <li>Load balancing</li>
+            </ul>
           </div>
-          <div class="skill-card reveal" style="--delay: 0.4s;">
-            <h3>Cloud & DevOps</h3>
-            <div class="tag-row">
-              <span class="tag">AWS</span>
-              <span class="tag">Docker</span>
-              <span class="tag">Jenkins</span>
-              <span class="tag">Nginx</span>
-              <span class="tag">Apache</span>
-            </div>
+          <div class="stack-group">
+            <h3>DevOps &amp; delivery</h3>
+            <ul class="tags">
+              <li>Docker</li>
+              <li>Jenkins CI/CD</li>
+              <li>Nginx</li>
+              <li>Apache</li>
+              <li>Zero-downtime deploys</li>
+              <li>Monitoring &amp; alerting</li>
+              <li>New Relic</li>
+              <li>Sentry</li>
+            </ul>
           </div>
-          <div class="skill-card reveal" style="--delay: 0.5s;">
-            <h3>Tools</h3>
-            <div class="tag-row">
-              <span class="tag">JIRA</span>
-              <span class="tag">Git</span>
-              <span class="tag">SVN</span>
-              <span class="tag">Selenium</span>
-              <span class="tag">Elasticsearch</span>
-            </div>
+          <div class="stack-group">
+            <h3>Data &amp; storage</h3>
+            <ul class="tags">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>Elasticsearch</li>
+            </ul>
           </div>
-          <div class="skill-card reveal" style="--delay: 0.6s;">
-            <h3>Payments</h3>
-            <div class="tag-row">
-              <span class="tag">PayPal</span>
-              <span class="tag">Stripe</span>
-              <span class="tag">Authorize.net</span>
-              <span class="tag">Payment Wall</span>
-              <span class="tag">Coinsgate</span>
-            </div>
+          <div class="stack-group">
+            <h3>Platforms</h3>
+            <ul class="tags">
+              <li>WordPress VIP</li>
+              <li>WHMCS</li>
+              <li>Gutenberg</li>
+              <li>PHPCS</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Growth &amp; billing</h3>
+            <ul class="tags">
+              <li>PostHog</li>
+              <li>ChartMogul</li>
+              <li>Stripe</li>
+              <li>PayPal</li>
+            </ul>
           </div>
         </div>
       </section>
 
+      <!-- Education -->
       <section class="section" id="education">
         <div class="section-head">
           <h2>Education</h2>
-          <p>Formal training in computer science and emerging technologies.</p>
         </div>
-        <div class="edu-grid">
-          <article class="edu-card reveal" style="--delay: 0.1s;">
-            <h3>NED University of Engineering & Technology</h3>
-            <p>Master of Science, Computer Science and Information Technology</p>
-            <span class="time">Jan 2020 - Feb 2022</span>
-            <div class="tag-row">
-              <span class="tag">Machine Learning</span>
-              <span class="tag">Data Mining</span>
-              <span class="tag">Artificial Intelligence</span>
-              <span class="tag">Cloud Computing</span>
-            </div>
+
+        <div class="cards two">
+          <article class="card">
+            <h3>MS, Computer Science &amp; IT</h3>
+            <p class="org">NED University of Engineering &amp; Technology</p>
+            <p class="when">Jan 2020 – Feb 2022</p>
+            <ul class="tags">
+              <li>Machine Learning</li>
+              <li>Data Mining</li>
+              <li>Cloud Computing</li>
+              <li>NLP</li>
+            </ul>
           </article>
-          <article class="edu-card reveal" style="--delay: 0.2s;">
-            <h3>University of Sindh</h3>
-            <p>Bachelor of Science, Computer Science</p>
-            <span class="time">Jan 2007 - Dec 2010</span>
-            <div class="tag-row">
-              <span class="tag">Software Engineering</span>
-              <span class="tag">Operating Systems</span>
-              <span class="tag">Database</span>
-              <span class="tag">Digital Logic Design</span>
-            </div>
+          <article class="card">
+            <h3>BS, Computer Science</h3>
+            <p class="org">University of Sindh</p>
+            <p class="when">Jan 2007 – Dec 2010</p>
+            <ul class="tags">
+              <li>Software Engineering</li>
+              <li>Operating Systems</li>
+              <li>Databases</li>
+            </ul>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="container footer-grid">
-        <p>Available for remote backend roles, integrations, and product engineering leadership.</p>
-        <div class="footer-links">
-          <a href="mailto:zubidev@gmail.com">zubidev@gmail.com</a>
-          <span> | </span>
-          <a href="https://www.linkedin.com/in/zubidev/" target="_blank">LinkedIn</a>
-        </div>
-      </div>
+    <footer class="site-foot">
+      <p>Open to senior and staff backend / full-stack roles on distributed teams.</p>
+      <p class="foot-links">
+        <a href="mailto:zubidev@gmail.com">zubidev@gmail.com</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://www.linkedin.com/in/zubidev/" target="_blank" rel="noopener">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/zubidev" target="_blank" rel="noopener">GitHub</a>
+      </p>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/scripts.js"></script>
   </body>
 </html>
