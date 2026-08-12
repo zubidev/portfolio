@@ -255,6 +255,36 @@
               <li>Migrations</li>
             </ul>
           </article>
+
+          <article class="card">
+            <h3>Zero-touch account provisioning</h3>
+            <p>
+              Custom WHMCS modules and account-lifecycle hooks that turn a self-serve signup into a
+              fully provisioned, running product account with no human in the loop — plus dynamic
+              pricing, trial, and checkout logic across Stripe and Spreedly, and fraud scoring to
+              block abusive payments.
+            </p>
+            <ul class="tags">
+              <li>WHMCS</li>
+              <li>Stripe</li>
+              <li>Spreedly</li>
+              <li>Fraud scoring</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Agentic development harness</h3>
+            <p>
+              An LLM agent harness wired into the IDE over MCP — repo context, test execution, and
+              static analysis exposed as agent tools — built to make AI tooling a dependable part of
+              the team's daily engineering workflow rather than a novelty.
+            </p>
+            <ul class="tags">
+              <li>MCP</li>
+              <li>LLM agents</li>
+              <li>Developer tooling</li>
+            </ul>
+          </article>
         </div>
       </section>
 
@@ -274,25 +304,54 @@
             </div>
             <ul class="bullets">
               <li>
-                Own self-service growth surfaces end to end across a portfolio of subscription
-                products — signup and trial flows, upgrade and conversion paths, and the
-                React/TypeScript interfaces and Node.js APIs behind them.
+                <strong>Own self-service growth end to end</strong> across a portfolio of
+                subscription products — signup, trial, upgrade, and conversion paths, plus the
+                React/TypeScript interfaces and Node.js APIs behind them, as the engineer
+                accountable from data model to UI.
               </li>
               <li>
-                Built a complete partner onboarding and referral platform from scratch (Laravel +
-                React), now serving thousands of onboarded partners in production.
+                <strong>Built a partner onboarding and referral platform from scratch</strong>
+                (Laravel + React) — self-serve signup, referral attribution, commission tiers,
+                payout workflows, and fraud checks. <strong>Thousands of partners run on it in
+                production today.</strong>
               </li>
               <li>
-                Designed and shipped REST APIs that evolved without breaking existing clients, using
-                additive schema changes, dual-write/backfill migrations, and deprecation windows.
+                <strong>Turned self-serve signup into a fully provisioned account with no human
+                touch</strong>, through custom WHMCS modules and account-lifecycle hooks.
               </li>
               <li>
-                Built a WHMCS → ChartMogul subscription data pipeline producing trustworthy MRR,
-                churn, expansion, and LTV metrics.
+                <strong>Shipped dynamic pricing, trial, and checkout logic</strong> across Stripe and
+                Spreedly — rate calculation, promotional discounts, and tiered pricing applied at
+                checkout — with fraud scoring on payment and signup flows to block abusive payments
+                and reduce chargebacks.
               </li>
               <li>
-                Ran onboarding and conversion experiments with PostHog — defining hypotheses and
-                success metrics with PMs and marketing, then shipping the winners.
+                <strong>Made the subscription numbers trustworthy</strong>: a WHMCS → ChartMogul
+                pipeline normalising raw billing events into MRR, churn, expansion, and LTV — now the
+                single source of truth leadership uses to judge self-serve growth.
+              </li>
+              <li>
+                <strong>Found where trial users actually drop off</strong> by instrumenting the
+                funnel with Mixpanel event taxonomies, Google Tag Manager, BigQuery analysis, and
+                Hotjar session replays — then tested the fixes with PostHog experiments and shipped
+                the winners.
+              </li>
+              <li>
+                <strong>Shipped REST APIs that evolve without breaking clients</strong> — additive
+                schema changes, dual-write/backfill migrations, and deprecation windows instead of
+                breaking releases.
+              </li>
+              <li>
+                <strong>Operate what I ship</strong> — Docker services on AWS (Lambda, S3, SQS),
+                CI/CD pipelines, and New Relic/Sentry monitoring, including production incident
+                response on revenue-critical flows. Security is part of done: caught and fixed a
+                SQL-injection pattern and an authorization gap before release.
+              </li>
+              <li>
+                <strong>Led a team of 5 engineers</strong> — mentoring through code review and tech
+                talks, holding the line on coding standards (ESLint, PHPCS) and automated tests
+                (Jest, Cypress, PHPUnit), and driving agentic AI tooling into the team's daily
+                workflow.
               </li>
             </ul>
           </li>
@@ -305,24 +364,24 @@
             </div>
             <ul class="bullets">
               <li>
-                Delivered high-traffic front-ends with React and Gatsby against headless CMS APIs,
+                <strong>Delivered high-traffic front-ends</strong> with React and Gatsby against headless CMS APIs,
                 improving Core Web Vitals on acquisition and onboarding entry points.
               </li>
               <li>
-                Built reusable component and block systems — custom Gutenberg blocks and a theme
+                <strong>Built reusable component and block systems</strong> — custom Gutenberg blocks and a theme
                 framework on the WordPress Customization API — so product and content teams could
                 ship landing pages without engineering.
               </li>
               <li>
-                Worked to enterprise platform standards on WordPress VIP: VIP-Go ruleset, PHPCS,
+                <strong>Worked to enterprise platform standards on WordPress VIP</strong>: VIP-Go ruleset, PHPCS,
                 mandatory code review, strict performance and caching requirements.
               </li>
               <li>
-                Cut p95 response times with Redis caching and MySQL query optimisation; instrumented
+                <strong>Cut p95 response times</strong> with Redis caching and MySQL query optimisation; instrumented
                 services with New Relic and Sentry to catch regressions before users reported them.
               </li>
               <li>
-                Automated build and release workflows with Jenkins CI/CD and AWS (Lambda, S3, SQS),
+                <strong>Automated build and release workflows</strong> with Jenkins CI/CD and AWS (Lambda, S3, SQS),
                 and shipped internal tooling that reduced release friction for the whole web team.
               </li>
             </ul>
@@ -336,16 +395,16 @@
             </div>
             <ul class="bullets">
               <li>
-                Built integrations across Slack, Jira, Salesforce, Asana, Zendesk, Tableau,
+                <strong>Built integrations</strong> across Slack, Jira, Salesforce, Asana, Zendesk, Tableau,
                 Baremetrics, and Google Workspace — including a Slack bot using slash commands,
                 events, scheduled messages, and interactive components.
               </li>
               <li>
-                Designed AWS network architecture supporting multiple workloads and environments —
+                <strong>Designed AWS network architecture</strong> supporting multiple workloads and environments —
                 web app, analytics pipeline, and database.
               </li>
               <li>
-                Established coding standards and review practices for consistency, maintainability,
+                <strong>Established coding standards and review practices</strong> for consistency, maintainability,
                 and testability.
               </li>
             </ul>
@@ -359,15 +418,15 @@
             </div>
             <ul class="bullets">
               <li>
-                Rebuilt a company brand site from scratch with a module-based page builder;
+                <strong>Rebuilt a company brand site from scratch</strong> with a module-based page builder;
                 integrated booking systems, Salesforce, and Dynamics CRM with WordPress.
               </li>
               <li>
-                Built a tool importing Associated Press news and images into WordPress via the AP
+                <strong>Built a tool importing Associated Press news</strong> and images into WordPress via the AP
                 News Media API.
               </li>
               <li>
-                Documented, built, and consumed RESTful APIs; refactored and performance-tuned
+                <strong>Documented, built, and consumed RESTful APIs</strong>; refactored and performance-tuned
                 PHP/MySQL applications in cross-functional agile teams.
               </li>
             </ul>
@@ -453,16 +512,59 @@
               <li>WordPress VIP</li>
               <li>WHMCS</li>
               <li>Gutenberg</li>
-              <li>PHPCS</li>
+              <li>Headless CMS</li>
             </ul>
           </div>
           <div class="stack-group">
-            <h3>Growth &amp; billing</h3>
+            <h3>Billing &amp; payments</h3>
+            <ul class="tags">
+              <li>Stripe</li>
+              <li>Spreedly</li>
+              <li>Chargebee</li>
+              <li>PayPal</li>
+              <li>WHMCS</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Analytics &amp; growth</h3>
             <ul class="tags">
               <li>PostHog</li>
               <li>ChartMogul</li>
-              <li>Stripe</li>
-              <li>PayPal</li>
+              <li>Mixpanel</li>
+              <li>Google Tag Manager</li>
+              <li>BigQuery</li>
+              <li>Hotjar</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Quality &amp; testing</h3>
+            <ul class="tags">
+              <li>Jest</li>
+              <li>Cypress</li>
+              <li>PHPUnit</li>
+              <li>ESLint</li>
+              <li>PHPCS</li>
+              <li>Code review</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>AI tooling</h3>
+            <ul class="tags">
+              <li>LLM agents</li>
+              <li>MCP</li>
+              <li>Claude</li>
+              <li>Copilot</li>
+            </ul>
+          </div>
+          <div class="stack-group">
+            <h3>Integrations</h3>
+            <ul class="tags">
+              <li>HubSpot</li>
+              <li>Salesforce</li>
+              <li>Zendesk</li>
+              <li>Twilio</li>
+              <li>Slack</li>
+              <li>Jira</li>
             </ul>
           </div>
         </div>

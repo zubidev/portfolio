@@ -508,6 +508,12 @@ main {
   padding-left: 1.1rem;
 }
 
+/* Lead-ins carry the outcome — keep them at full contrast */
+.bullets strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 .bullets li::before {
   content: "";
   position: absolute;
